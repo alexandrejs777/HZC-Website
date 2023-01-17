@@ -9,6 +9,8 @@ body {
     color: #FFFFFF;
 }
 
+/* ------------- CABEÇALHO */
+
 .cabecalho {
     display: flex;
     justify-content: space-between;
@@ -30,4 +32,16 @@ body {
 
 .cabecalho_logo {
     width: 40px;
+}
+
+
+/* --------------- MENU LATERAL */
+
+.menu-lateral {
+    display: flex;
+    flex-direction: column;
+}
+
+.menu-lateral__logo {
+    align-self: center;
 }
