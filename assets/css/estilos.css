@@ -110,10 +110,17 @@ body {
 
 .principal {
     padding: 24px 16px;
+    display: grid;
+    gap: 16px;
 }
 
 .titulo-pagina {
     font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.titulo-secao {
+    font-size: 1.2rem;
     font-weight: 700;
 }
 
@@ -122,6 +129,11 @@ body {
     border-radius: 15px;
     overflow: hidden;
     background-color: #2C343A;
+    margin-bottom: 8px;
+}
+
+.cartao--destaque {
+    margin: 16px 0;
 }
 
 .cartao__conteudo {
@@ -151,10 +163,16 @@ body {
     display: flex;
     align-items: center;
     color: #95999C;
+    margin-right: 32px;
 }
 
 .cartao__info--tempo::before {
     content: "\e90c";
+    margin-right: 8px;
+}
+
+.cartao__info--preco::before {
+    content: "\e905";
     margin-right: 8px;
 }
 
@@ -172,10 +190,16 @@ body {
     height: 40px;
     border-radius: 10px;
     font-size: 0.9rem;
+    justify-self: flex-end;
 }
 
 .cartao__botao--play::before {
     content: "\e90b";
+    font-size: 24px;
+}
+
+.cartao__botao--carrinho::before {
+    content: "\e901";
     font-size: 24px;
 }
 
@@ -186,4 +210,9 @@ body {
 
 .cartao__botao--destaque::before {
     margin-right: 8px;
+}
+
+.secao {
+    display: grid;
+    gap: 16px;
 }
