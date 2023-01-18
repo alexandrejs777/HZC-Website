@@ -20,7 +20,7 @@ body {
     box-shadow: 0px 4px 4px rgb(0, 0, 0, 0.16);
 }
 
-.cabecalho_menu i::before {
+.cabecalho__menu i::before {
     content: "\e904";
     font-size: 24px;
 }
@@ -43,6 +43,14 @@ body {
     background-color: #15191C;
     width: 75vw;
     height: 100vh;
+    position: absolute;
+    left: -100vw;
+    transition: .25s;
+}
+
+.menu-lateral--ativo {
+    left: 0;
+    transition: .25s;
 }
 
 .menu-lateral__logo {
